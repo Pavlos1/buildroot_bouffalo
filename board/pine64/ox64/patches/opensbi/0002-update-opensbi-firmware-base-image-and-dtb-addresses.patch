@@ -25,7 +25,7 @@ index 136853e..9368789 100644
  else
    # This needs to be 2MB aligned for 64-bit system
 -  FW_JUMP_ADDR=$(shell printf "0x%X" $$(($(FW_TEXT_START) + 0x200000)))
-+  FW_JUMP_ADDR=0x50000000
++  FW_JUMP_ADDR=0x50200000
  endif
 -FW_JUMP_FDT_ADDR=$(shell printf "0x%X" $$(($(FW_TEXT_START) + 0x2200000)))
 +FW_JUMP_FDT_ADDR=0x51ff8000

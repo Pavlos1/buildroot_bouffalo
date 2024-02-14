@@ -1,0 +1,13 @@
+diff --git a/apps/d0_lowload/src/main.c b/apps/d0_lowload/src/main.c
+index 54313c0..af6d1ef 100644
+--- a/apps/d0_lowload/src/main.c
++++ b/apps/d0_lowload/src/main.c
+@@ -35,7 +35,7 @@
+ 
+ extern void unlz4(const void *aSource, void *aDestination, uint32_t FileLen);
+ 
+-#define VM_LINUX_DST_ADDR 0x50000000
++#define VM_LINUX_DST_ADDR 0x50200000
+ #define OPENSBI_DST_ADDR 0x3EF80000
+ #define DTB_DST_ADDR 0x51ff8000
+ #define BOOT_HDR_SRC_ADDR 0x5d5ff000
